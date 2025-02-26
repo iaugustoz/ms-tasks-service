@@ -10,8 +10,8 @@
 	</parent>
 	<groupId>com.iaugusto</groupId>
 	<artifactId>service-tasks</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>service.tasks</name>
+	<version>1.0.0</version>
+	<name>service-tasks</name>
 	<description>Microsserviço responsável por gerenciar os endpoints de TO-DO.</description>
 	<url/>
 	<licenses>
