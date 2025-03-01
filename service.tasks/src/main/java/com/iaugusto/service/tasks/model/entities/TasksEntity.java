@@ -1,4 +1,4 @@
-package com.iaugusto.service.tasks;
+package com.iaugusto.service.tasks.model.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
