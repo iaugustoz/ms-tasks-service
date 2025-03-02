@@ -1,16 +1,15 @@
 package com.iaugusto.service.tasks.model.entities;
 
 import com.iaugusto.service.tasks.model.dto.TasksDTO;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Entity(name = "Task")
+@Table(name = "task")
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -24,6 +23,8 @@ public class TasksEntity {
 
     private String type;
 
+    private String email;
+
     private LocalDateTime dueDate;
 
     private boolean notified;
@@ -31,6 +32,7 @@ public class TasksEntity {
     public TasksEntity(TasksDTO dto) {
         this.title = dto.title();
         this.type = dto.type();
+        this.email = dto.email();
         this.dueDate = dto.dueDate();
         this.notified = dto.notified();
     }

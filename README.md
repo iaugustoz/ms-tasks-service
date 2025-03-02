@@ -25,6 +25,7 @@ Descrição em andamento...
 - [Lombok](https://mvnrepository.com/artifact/org.projectlombok/lombok) - dependência para facilitar o desenvolvimento gerando códigos boilerplate 
 - [Spring Cloud Config Client](https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-config) - fornece suporte do lado do cliente e do servidor para configurar microsserviços
 - [Spring Cloud Eureka Discovery Client](https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client) - permite que microsserviços se registrem e descubram outros microsserviços
+- [Spring Cloud Starter OpenFeign](https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign) - permite a comunicação entre os microsserviços
 - [Spring Data JPA](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa) - para persistir dados em armazenamentos SQL
 - [H2 Database](https://mvnrepository.com/artifact/com.h2database/h2) - banco de dados em memória
 
