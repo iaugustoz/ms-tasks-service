@@ -24,6 +24,8 @@ public class TasksEntity {
 
     private String type;
 
+    private String email;
+
     private LocalDateTime dueDate;
 
     private boolean notified;
@@ -31,6 +33,7 @@ public class TasksEntity {
     public TasksEntity(TasksDTO dto) {
         this.title = dto.title();
         this.type = dto.type();
+        this.email = dto.email();
         this.dueDate = dto.dueDate();
         this.notified = dto.notified();
     }
