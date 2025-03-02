@@ -1,16 +1,13 @@
 package com.iaugusto.service.tasks.model.entities;
 
 import com.iaugusto.service.tasks.model.dto.TasksDTO;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
 @Entity(name = "Task")
+@Table(name = "task")
 @Getter
 @Setter
 @AllArgsConstructor
