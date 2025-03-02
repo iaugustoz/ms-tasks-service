@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.iaugusto</groupId>
 	<artifactId>service-tasks</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>service-tasks</name>
 	<description>Microsserviço responsável por gerenciar os endpoints de TO-DO.</description>
 	<url/>
@@ -35,6 +35,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
 		</dependency>
 
 		<!-- Spring Cloud Config Client -->
