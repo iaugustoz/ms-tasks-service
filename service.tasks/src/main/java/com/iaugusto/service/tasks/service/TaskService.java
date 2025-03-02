@@ -1,6 +1,6 @@
 package com.iaugusto.service.tasks.service;
 
-import com.iaugusto.service.tasks.feign.NotificationClient;
+import com.iaugusto.service.tasks.client.NotificationClient;
 import com.iaugusto.service.tasks.model.dto.NotificationDTO;
 import com.iaugusto.service.tasks.model.entities.TasksEntity;
 import com.iaugusto.service.tasks.repository.TaskRepository;

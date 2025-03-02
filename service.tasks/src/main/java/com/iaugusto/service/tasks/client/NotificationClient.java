@@ -1,4 +1,4 @@
-package com.iaugusto.service.tasks.feign;
+package com.iaugusto.service.tasks.client;
 
 import com.iaugusto.service.tasks.model.dto.NotificationDTO;
 import org.springframework.cloud.openfeign.FeignClient;
