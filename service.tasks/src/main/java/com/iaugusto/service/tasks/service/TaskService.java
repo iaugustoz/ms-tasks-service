@@ -5,10 +5,12 @@ import com.iaugusto.service.tasks.model.dto.NotificationDTO;
 import com.iaugusto.service.tasks.model.entities.TasksEntity;
 import com.iaugusto.service.tasks.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Service
 public class TaskService {
 
     @Autowired
@@ -17,8 +19,8 @@ public class TaskService {
     @Autowired
     private NotificationClient notificationClient;
 
-    public void setNotificationForDueTaks() {        LocalDateTime deadline = LocalDateTime.now().plusDays(1);
-
+    public void setNotificationForDueTaks() {
+        LocalDateTime deadline = LocalDateTime.now().plusDays(1);
         List<TasksEntity> tasks = taskRepository.findTasksDueWithinDeadline(deadline);
 
         for (TasksEntity task : tasks) {
@@ -27,6 +29,7 @@ public class TaskService {
             NotificationDTO request = new NotificationDTO(message, task.getEmail());
             notificationClient.sendNotification(request);
             task.setNotified(true);
+            taskRepository.save(task);
         }
     }
 }
