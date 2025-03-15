@@ -1,8 +1,10 @@
-# **TO-DO Microservice**
+# 📝 **To-Do Microservice** 📝
 
 ## 📜 **Descrição**
 
-Descrição em andamento...
+Este repositório contém um microsserviço desenvolvido para integrar um sistema de gerenciamento de tarefas (To-Do). Ele é responsável pelo processamento e administração das tarefas disponíveis, garantindo escalabilidade, organização e eficiência no fluxo de informações entre diferentes partes do sistema.
+
+Projetado com arquitetura baseada em microsserviços, o sistema permite fácil integração com outros serviços e mantém um alto nível de desacoplamento, favorecendo manutenção e evolução contínua.
 
 ---
 
@@ -22,7 +24,7 @@ Descrição em andamento...
 ## 📦 **Dependências**
 
 - [Spring Web](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web) - para trabalhar com requisições web
-- [Lombok](https://mvnrepository.com/artifact/org.projectlombok/lombok) - dependência para facilitar o desenvolvimento gerando códigos boilerplate 
+- [Lombok](https://mvnrepository.com/artifact/org.projectlombok/lombok) - dependência para facilitar o desenvolvimento gerando códigos boilerplate
 - [Spring Cloud Config Client](https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-config) - fornece suporte do lado do cliente e do servidor para configurar microsserviços
 - [Spring Cloud Eureka Discovery Client](https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client) - permite que microsserviços se registrem e descubram outros microsserviços
 - [Spring Cloud Starter OpenFeign](https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign) - permite a comunicação entre os microsserviços
