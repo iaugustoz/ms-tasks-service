@@ -1,4 +1,4 @@
-# 📝 **To-Do Microservice** 📝
+# 📝 **To-Do Microservice - Tasks** 📝
 
 ## 📜 **Descrição**
 
@@ -10,7 +10,7 @@ Projetado com arquitetura baseada em microsserviços, o sistema permite fácil i
 
 ## 🚀 **Status do Projeto**
 
-⚙️ Projeto em andamento...
+✅ Projeto Concluído.
 
 ---
 
