@@ -4,7 +4,11 @@
 
 Este repositório contém um microsserviço desenvolvido para integrar um sistema de gerenciamento de tarefas (To-Do). Ele é responsável pelo processamento e administração das tarefas disponíveis, garantindo escalabilidade, organização e eficiência no fluxo de informações entre diferentes partes do sistema.
 
-Projetado com arquitetura baseada em microsserviços, o sistema permite fácil integração com outros serviços e mantém um alto nível de desacoplamento, favorecendo manutenção e evolução contínua.
+Projetado com arquitetura baseada em microsserviços, o sistema permite fácil integração com outros serviços e mantém um alto nível de desacoplamento, favorecendo manutenção e evolução contínua. O projeto é constituído por alguns microsserviços e repositório de configuraçöes. A seguir, estão os principais componentes do sistema:
+
+- **[ms-service-notification](https://github.com/iaugustoz/ms-service-notification/)**: reponsável pelo gerenciamento e envio de notificações no sistema de To-Do List
+- **[ms-main-service](https://github.com/iaugustoz/ms-main-service/)**: microsserviço centralizador responsável por atuar como servidor de configuração (Config Server) e serviço de descoberta (Eureka Server).
+- **[config-server](https://github.com/iaugustoz/config-server/)**: repositório de configurações para os MS de tasks e notification
 
 ---
 
